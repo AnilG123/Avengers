@@ -19,5 +19,5 @@
 # Live Demo
 Live Demo on the Scratch Org: https://hosted-scratch.herokuapp.com/launch?template=git@github.com:AnilG123/Avengers.git
 # Preview
-![image](https://user-images.githubusercontent.com/121804986/211722729-5007efca-cca9-441a-a7a5-857902f5e0ff.png)
+![image](https://user-images.githubusercontent.com/121804986/211799578-c81d0553-0c15-4ba7-ab62-769118acbe80.png)
 
