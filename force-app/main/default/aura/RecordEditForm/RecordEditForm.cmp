@@ -1,0 +1,17 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasrecordId" access="global" >
+	 <lightning:recordEditForm onsubmit="{!c.handlesubmit}" recordId="{!v.recordId}" objectApiName="Contact">
+         <h1>
+         Record Edit form
+         </h1>
+        <lightning:messages />
+        <lightning:inputField fieldName="Name" />
+        <lightning:inputField fieldName="Phone" />
+        <lightning:inputField fieldName="Mobile" />
+        <lightning:inputField fieldName="Email" />
+         <div class="slds-m-top_medium">
+      
+       
+        <lightning:button  disabled="{!v.disabled}" variant="brand" type="submit" name="save" label="save" />
+         </div>
+    </lightning:recordEditForm>
+</aura:component>

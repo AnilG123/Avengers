@@ -1,0 +1,183 @@
+<aura:component >
+    <aura:attribute name="fnumber" Type="integer" default="0"/>
+    <aura:attribute name="fnumber1" Type="integer" default="0"/>
+    
+    <div class="slds-grid slds-gutters slds-wrap" style="height: 80px;">
+        <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small " >
+             <div>
+            <img src="{!$Resource.Naresh}"/>
+        </div>
+            <span>Naresh</span>
+            
+       <lightning:input name="First Number" label="Fnum" value="{!v.fnumber}"/>
+             
+                    <lightning:button variant="Brand" label="vote"  onclick="{!c.increment}"/>
+            <lightning:button variant="Brand" label="-"  onclick="{!c.decrease}"/>
+        </div>
+       
+        
+        
+        <div class="demo-only" style="width:80px" >
+            <article class="slds-tile slds-media"/>
+            <div class="slds-media__figure">
+                <span class="slds-avatar slds-avatar_circle slds-avatar_medium">
+            <img src="{!$Resource.Ranjith}"/>
+                </span>
+                <span>Ranjith</span>
+        </div>
+            <div style="width: 80px;">
+            
+             <lightning:input name="First Number" label="Fnum" value="{!v.fnumber1}"/>
+                <lightning:button variant="Brand" label="vote"  onclick="{!c.increment1}"/>
+            <lightning:button variant="Brand" label="-"  onclick="{!c.decrease1}"/>
+             </div>
+        </div>
+        <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+            <div>
+            <img src="{!$Resource.Praneeth}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Praneeth</button> 
+        </div>
+        </div>
+        <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+            <div>
+            <img src="{!$Resource.Sravani}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Sravani</button> 
+        </div>
+        </div>
+        <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+            <div>
+            <img src="{!$Resource.Shweta}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Shweta</button> 
+        </div>
+        </div>
+        <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+            <div>
+            <img src="{!$Resource.Swati}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Swati</button> 
+        </div>
+        </div>
+        <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+           <div>
+            <img src="{!$Resource.Pavani}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Pavani</button> 
+        </div>
+        </div>
+    
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+        <div>
+            <img src="{!$Resource.Nikhilesh}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Nikhilesh</button> 
+        </div>
+        </div>
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+        <div>
+            <img src="{!$Resource.Snehdeep}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Snehdeep</button> 
+        </div>
+        </div>
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+        <div>
+            <img src="{!$Resource.Shekha}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Shekha</button> 
+        </div>
+    </div>
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+        <div>
+            <img src="{!$Resource.Lavanya}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Lavanya</button> 
+        </div>
+    </div>
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+        <div>
+            <img src="{!$Resource.Anil}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Anil</button> 
+        </div>
+    </div>
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+         <div>
+            <img src="{!$Resource.Tarun}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Tarun</button> 
+        </div>
+    </div>
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+        <div>
+            <img src="{!$Resource.Sukanya}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Sukanya</button> 
+        </div>
+    </div>
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+        <div>
+            <img src="{!$Resource.Haritha}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Haritha</button> 
+        </div>
+    </div>
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+         <div>
+            <img src="{!$Resource.Amrutha}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Amrutha</button> 
+        </div>
+    </div>
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+        <div>
+            <img src="{!$Resource.Bhavani}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Bhavani</button> 
+        </div>
+    </div>
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+        <div>
+            <img src="{!$Resource.Asifa}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Asifa</button> 
+        </div>
+    </div>
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+        <div>
+            <img src="{!$Resource.Ranjith}"/>
+        </div>
+             <div>
+            <button style="width: 80px;">Ranjith</button> 
+        </div>
+    </div>
+    <div class="slds-col slds-size_1-of-5 slds-box slds-m-around_x-small slds-theme_success" >
+        <span>Lavanya</span>
+    </div>
+        
+        </div>
+        
+    <!--div>
+        <button class="slds-button slds-button_success">Success Button</button>
+
+    </div-->
+    
+</aura:component>

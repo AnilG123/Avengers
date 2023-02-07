@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<h1 class="red">My first component</h1>
+    <div>New devison</div>
+    <p>New printer</p>
+    
+    <ul>
+        <li class="green">My back ground is green</li>
+    </ul>
+</aura:component>

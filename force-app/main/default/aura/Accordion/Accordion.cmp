@@ -1,0 +1,41 @@
+<aura:component>
+    <!--aura:attribute name="activeSections" type="List" default="['A','C']" />
+    <lightning:accordion allowMultipleSectionsOpen="true"
+                            activeSectionName="{! v.activeSections }">
+        <lightning:accordionSection name="A" label="Accordion Title A">
+            <p>This is the content area for section A.</p>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="B" label="Accordion Title B">
+                <p>This is the content area for section B.</p>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="C" label="Accordion Title C">
+                <p>This is the content area for section C.</p>
+        </lightning:accordionSection>
+    </lightning:accordion-->
+    
+     <aura:attribute name="section" type="String"/>
+                <lightning:button label="Expand Objects A" onclick="{!c.handleClick}"/>
+                <lightning:button label="Expand Fields B" onclick="{!c.handleClickB}"/>
+                <lightning:button label="Expand Records C" onclick="{!c.handleClickC}"/>
+    
+                <lightning:accordion
+                    activeSectionName="{!v.section}"
+                    onsectiontoggle="{! c.handleSectionToggle }">
+                    <lightning:accordionSection name="A" label="Objects A">
+                        Account,<br/>
+                        Contact,<br/>
+                        Opportunites,<br/>
+                    </lightning:accordionSection>
+                    <lightning:accordionSection name="B" label="Fields B">
+                        Name,<br/>
+                        Email,<br/>
+                        Number,<br/>
+                        Geolocation,<br/>
+                    </lightning:accordionSection>
+                    <lightning:accordionSection name="C" label="Records C">
+                        BillingAdress,<br/>
+                        Contactrecords,<br/>
+                        AccountDetails,<br/>
+                    </lightning:accordionSection>
+                </lightning:accordion>
+</aura:component>

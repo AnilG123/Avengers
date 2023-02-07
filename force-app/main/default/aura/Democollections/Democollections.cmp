@@ -1,0 +1,13 @@
+<aura:component >
+    <aura:attribute name="Name" type="string" default="anil" access="public" />
+    <aura:attribute name="Mycolor" type="List" default="['Black','red','Pink']" access="public" />
+    <aura:attribute name="colorMap" type="Map" default="{B:'Black',R:'red',P:'Pink'}" access="public" />
+    <br/>
+    Hello {!v.Name} and My favourite color is {!v.Mycolor[0]} and{!v.colorMap.B} <br/>
+    
+    
+    <aura:iteration items="{!v.Mycolor}" var="item">
+                    {!item} <br/>
+    </aura:iteration>
+                                                                                               
+</aura:component>

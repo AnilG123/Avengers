@@ -1,0 +1,19 @@
+<aura:component >
+    <aura:attribute name="MsgFromNotifier" type="string"/>
+    <aura:attribute name="label" type="string"/>
+    <aura:attribute name="eventCount" type="Integer" default="0"/>
+    
+    <aura:handler name="CamEvent" event="c:ComponentEvent"
+                  action="{!c.handelComponentEvent}"/>
+    
+    <h1>
+       Component Event handler
+    </h1>
+    
+    <p>{!v.MsgFromNotifier}</p>
+    <p>{!v.label}</p>
+    <p>{!v.eventCount}</p>
+    
+    <hr/>
+    <c:Child/>
+</aura:component>

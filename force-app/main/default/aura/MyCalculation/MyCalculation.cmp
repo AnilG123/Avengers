@@ -1,0 +1,29 @@
+<aura:component >
+ <aura:attribute name="fnumber" Type="Decimal"/>
+    <aura:attribute name="snumber" Type="Decimal"/>
+    <aura:attribute name="Result" Type="Decimal"/>
+       <div>
+           My Caluculator
+    </div>
+    <div>
+        <ui:inputnumber label="First Number: " aura:id="Fnum" value="{!v.fnumber}"/>
+    </div>
+     <div>
+        <ui:inputnumber label="Second Number: " aura:id="Snum" value="{!v.snumber}"/>
+    </div>
+             <div>
+        <ui:inputnumber label="Result:" aura:id="Result" value="{!v.Result}"/>
+    </div>
+     <div>
+         <ui:button label="Add" press="{!c.add}"  class="button"/>
+    </div>
+     <div>
+         <ui:button label="subtract" press="{!c.sub}"  class="button"/>
+    </div>
+     <div>
+         <ui:button label="multiply" press="{!c.mul}"  class="button"/>
+    </div>
+    <div>
+         <ui:button label="division" press="{!c.div}"  class="button"/>
+    </div>
+</aura:component>

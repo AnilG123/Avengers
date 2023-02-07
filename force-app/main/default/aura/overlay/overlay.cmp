@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+    <lightning:overlayLibrary aura:id="overLayLib" />
+    <lightning:button value="Create Modal" label="Create Modal" onclick="{!c.createModal}" />
+</aura:component>

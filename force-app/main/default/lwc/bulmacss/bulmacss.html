@@ -1,0 +1,19 @@
+<template>
+  <div class="card">
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img src="https://images.hdqwalls.com/download/i-am-iron-man-4k-ky-3840x2400.jpg" alt="Placeholder image">
+        <lightning-button label="Submit" slot="actions" onclick={handleClick}></lightning-button>
+    <p class="slds-p-horizontal_small">
+        <lightning-input type="number" vaue={fNumber} name="fstNumber"  label="Enter First Number" onchange={handleChange} ></lightning-input>
+        <lightning-input type="number" vaue={sNumber} name="scdNumber"  label="Enter Second Number" onchange={handleChange} ></lightning-input>
+    </p>
+    <p slot="footer">
+        <b>{sum}</b>
+        <b>{greeting}</b>
+    </p>
+      </figure>
+    </div>
+  </div>
+
+      </template>

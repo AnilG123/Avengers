@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasrecordId" access="global" >
+    <lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Opportunity">
+        
+        
+        
+        <div class="slds-box">
+            <lightning:outputfield field-name="Opportunity Name" /> 
+            <lightning:outputfield field-name="Stage" />
+            <lightning:outputfield field-name="Amount" />
+        </div>
+    </lightning:recordViewForm>
+</aura:component>
